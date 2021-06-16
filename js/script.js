@@ -19,9 +19,9 @@ button.addEventListener("click", function(){
     }
 });
 
-/*input.addEventListener("keypress", function(event){
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode("testing"));
-    ul.appendChild(li);
-});*/
+input.addEventListener("keypress", function(event){
+    if (inputValidation() > 0 && event.key === 'Enter'){
+        createText();
+    }
+});
 
